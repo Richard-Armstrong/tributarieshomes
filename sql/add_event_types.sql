@@ -1,0 +1,16 @@
+INSERT INTO `nvp_codes` (`id`, `context`, `seq`, `display`, `theValue`, `altValue`) VALUES
+(19, 'Event_Types', 1, 'Company Created', '1', ''),
+(20, 'Event_Types', 2, 'Company Edited', '2', ''),
+(21, 'Event_Types', 3, 'User Created', '3', ''),
+(22, 'Event_Types', 4, 'Admin Password Change', '4', ''),
+(23, 'Event_Types', 5, 'Department Created', '5', ''),
+(24, 'Event_Types', 6, 'Department Edited', '6', ''),
+(25, 'Event_Types', 7, 'Department Deleted', '7', ''),
+(26, 'Event_Types', 8, 'New Form Created', '8', ''),
+(27, 'Event_Types', 9, 'New Form Entry', '9', ''),
+(28, 'Event_Types', 10, 'Form Data Imported', '10', ''),
+(29, 'Event_Types', 11, 'Form Deactivated', '11', ''),
+(30, 'Event_Types', 12, 'Form Reactivated', '12', ''),
+(31, 'Event_Types', 13, 'Form Alert Created', '13', ''),
+(32, 'Event_Types', 14, 'Form Alert Edited', '14', ''),
+(33, 'Event_Types', 15, 'Quality Check', '15', '');
