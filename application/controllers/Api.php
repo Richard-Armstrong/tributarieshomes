@@ -26,6 +26,8 @@ class Api extends REST_Controller {
 		$inv_desc_short = trim($this->post('inv_desc_short'));
 		$inv_seq = trim($this->post('inv_seq'));
 		$landing_image = trim($this->post('landing_image'));
+		$flythru_link = trim($this->post('flythru_link'));
+
 		if ($this->post('active_flag') === "on") {
 			$active_flag = 1;
 		}
@@ -45,7 +47,8 @@ class Api extends REST_Controller {
 			'inv_desc_short'	=> $inv_desc_short,
 			'seq'		  		=> $inv_seq,
 			'active_flag' 		=> $active_flag,
-			'landing_image'		=> $landing_image
+			'landing_image'		=> $landing_image,
+			'flythru_link'		=> $flythru_link
 		);
 		// Attempt to create the Company and report success or failure
 		if (!$inv_id = $this->inventory_model->insert($data))

@@ -24,13 +24,13 @@
 				</div>
 
 				<div class="form-group">
-					<label class="form-control-label">Descriptio</label>
+					<label class="form-control-label">Description</label>
 					<input type="text" class="form-control" id="bio_companies" name="inv_description" placeholder="Description"
 					value="<?= htmlspecialchars($record->inv_description, ENT_QUOTES, 'UTF-8') ?>"/>
 				</div>
 
 				<div class="form-group">
-					<label class="form-control-label">Desc Short</label>
+					<label class="form-control-label">Short Description</label>
 					<input type="text" class="form-control" id="inv_desc_short" name="inv_desc_short" placeholder="Image URL"
 					value="<?= htmlspecialchars($record->inv_desc_short, ENT_QUOTES, 'UTF-8') ?>"/>
 				</div>

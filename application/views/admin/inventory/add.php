@@ -66,6 +66,11 @@ alert(response);
 				</div>
 
 				<div class="form-group">
+					<label class="form-control-label">Landing Image</label>
+					<input type="text" class="form-control" id="landing_image" placeholder="Landing Image"/>
+				</div>
+
+				<div class="form-group">
 					<label class="form-control-label">Flythru Link</label>
 					<input type="text" class="form-control" id="flythru_link" placeholder="Flythru"/>
 				</div>
