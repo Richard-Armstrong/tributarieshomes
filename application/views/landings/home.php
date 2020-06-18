@@ -13,25 +13,37 @@
 				bootstrap.js file, search for "emulateTransitionEnd(600)" and
 				change it with "emulateTransitionEnd(1200)"
 		    -->
-		    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		      <!-- Indicators -->
-		      <ol class="carousel-indicators">
-		        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<div id="inventory-carousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+
+				<?php
+				$slides = '';
+				$slide_count = 0;
+
+				foreach ($inventory as $row) {
+					// Load a variable with slides and initialize slide definitions
+					echo '<li data-target="#inventory-carousel" data-slide-to="' . $slide_count . '" ';
+					if ($slide_count == 0 ) {
+						echo 'class="active"';
+						$slides .= '<div class="item active">';
+					} else {
+						$slides .= '<div class="item">';
+
+					}
+					echo '></li>';
+
+					$slides .= '  <img src="' . base_url() . 'assets/inventory/' . $row->inv_directory . '/' . $row->landing_image . '" alt="Awesome Image" >';
+					$slides .= '</div>';
+
+					$slide_count +=1;
+				}
+				 ?>
 		      </ol>
 
 		      <!-- Wrapper for slides -->
 		      <div class="carousel-inner">
-		        <div class="item active">
-		          <img src="<?=base_url();?>assets/inventory/blandenburg.jpg" alt="Awesome Image">
-		        </div>
-		        <div class="item">
-		          <img src="<?=base_url();?>assets/inventory/southgate.jpg" alt="Awesome Image">
-		        </div>
-		        <div class="item">
-		          <img src="<?=base_url();?>assets/inventory/rhudy.jpg" alt="Awesome Image">
-		        </div>
+				  <?=$slides?>
 		      </div>
 
 		      <!-- Controls -->
@@ -43,6 +55,7 @@
 		      </a>
 		    </div>
 		</div> <!-- end carousel -->
+
 		<!--  Floor plans if they exist     -->
 		<div id="inventory">
 

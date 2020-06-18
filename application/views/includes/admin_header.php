@@ -116,7 +116,6 @@
 						<?php endif // is_account_manager ?>
 
 						<?php if (is_superuser($this->session->userdata('user_level'))) : ?>
-								<a class="collapse-item" href="<?= base_url("index.php/maintenance/companies") ?>">Companies</a>
 								<a class="collapse-item" href="<?= base_url("index.php/maintenance/nvp_codes") ?>">Codes</a>
 						<?php endif // is_superuser ?>
 							</div>
