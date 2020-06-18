@@ -82,8 +82,8 @@ $config['salt_prefix']    = version_compare(PHP_VERSION, '5.3.7', '<') ? '$2a$' 
  | The controller should check this function and act
  | appropriately. If this variable set to 0, there is no maximum.
  */
-$config['site_title']                 = "bluwaveforms.com";         // Site Title, example.com
-$config['admin_email']                = "noreply@bluwaveforms.com"; // Admin Email, admin@example.com
+$config['site_title']                 = "tributarieshomes.com";         // Site Title, example.com
+$config['admin_email']                = "noreply@tributarieshomes.com"; // Admin Email, admin@example.com
 $config['default_group']              = 'unassigned';               // Default group, use name
 $config['admin_group']                = 'administration';           // Default administrators group, use name
 $config['unassigned_group']           = 'unassigned';               // Default unassigned group, use name
